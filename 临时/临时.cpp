@@ -1,0 +1,585 @@
+////////#include"stdio.h"
+////////int main()
+////////{
+//////	//int a;
+//////	//printf("请输入学生的成绩可判断是否合法\n");
+//////	//scanf_s("%d", &a);
+//////	//	if (a >= 0 && a <= 100)
+//////	//		printf("该学生成绩合法");
+//////	//	else
+//////	//		printf("该学生成绩不合法");
+//////
+//////	//int a, b, c, max, min;
+//////	//printf("请输入三个整数即可输出从小到大输出\n");
+//////	//scanf_s("%d%d%d", &a, &b, &c);
+//////	//if (a < b)
+//////	//	max = b, min = a;
+//////	//else
+//////	//	max = a, min = b;
+//////	//if (max < c)
+//////	//	max = c;
+//////	//if (min > c)
+//////	//	min = c;
+//////	//printf("最大值为%d\n中间值%d\n最小值为%d\n", max,a+b+c-max-min, min);
+//////
+//////	/*int i = 1;
+//////	while (i <= 1000)
+//////	{
+//////		printf("%d\n", i);
+//////		i++;
+//////	}*/
+//////
+//////	/*int a, b, c, sum,i=1;
+//////	float avg;
+//////	while (i <= 4)
+//////	{
+//////		printf("请输入第%d同学的各科成绩\n",i);
+//////		scanf_s("%d%d%d", &a, &b, &c);
+//////		sum = a + b + c;
+//////		avg = sum / 3;
+//////		printf("该学生的总分是%d\n该学生的平均分为%f\n", sum, avg);
+//////		i++;
+//////	}*/
+//////
+//////	/*int a=0, i = 1;
+//////	while (i <= 100)
+//////	{
+//////		a += i;
+//////		i++;
+//////	}
+//////	printf("%d", a);*/
+//////
+//////
+//////	//1、十进制转化为二进制，并统计其二禁止序列中包含的1和0和个数
+//////		//int num10, num2;
+//////		//int i
+//////		//printf("请输入十进制数:\n");
+//////		//scanf("%d", num10);
+//////		//for ()
+//////		//{
+//////		//	num10=
+//////		//}
+//////	//2、二进制转化为10进制
+//////
+//////
+//////
+//////		//char c;
+//////		//c = getchar();
+//////		//while ((c = getchar()) != '?')
+//////		//	putchar(++c);
+//////	//int x, y;
+//////	//for (x = 1; x <= 29; x++)
+//////	//{
+//////	//	y = 30 - x;
+//////	//	if ((2 * x + 4 * y) == 90)
+//////	//		printf("%d,%d", x, y);
+//////	//}
+//////
+//////	/*int a=1, b=2, t = 0;
+//////	if (a = 2)t = a, a = b, b = t;
+//////	printf("%d,%d", a, b);*/
+//////
+//////	/*int i, j;
+//////	for (i = 0, j = 10; i < j; i += 2, j--)
+//////	{
+//////		printf("%d;%d\n", i, j);
+//////	}*/
+//////
+//////	/*int i = 0, j = 0, k = 0, m;
+//////	for(m=0;m<4;m++)
+//////		switch(m)
+//////		{
+//////		case 0:i = m++;
+//////		case 1:j = m++;
+//////		case 2:k = m++;
+//////		case 3:m++;
+//////		}
+//////	printf("%d", m);*/
+//////
+//////	/*int k, j, m;
+//////	for (k = 5; k >= 1; k--)
+//////	{
+//////		m = 0;
+//////		for (j = k; j <= 5; j++)
+//////			m = m + k * j;
+//////	}
+//////	printf("%d", m);*/
+//////
+////////int k = 1; char ch = 'A';
+////////do
+////////{
+////////	switch (ch++)
+////////	{
+////////	case 'A':k++; break;
+////////	case 'B':k--;
+////////	case 'C':k+=2; break;
+////////	case 'D':k %= 2; continue;
+////////	case 'E':k*=2; break;
+////////	default:k /= 3;
+////////	}
+////////	k++;
+////////} while (ch <= 'F');
+////////printf("k=%d\n", k);
+//////
+//////
+////////(14)
+////////	int s;
+////////	while ((s = getchar()) != '\n')
+////////	{
+////////		switch (s - '2')
+////////		{
+////////		case 0:
+////////		case 1:putchar(s + 4);
+////////		case 2:putchar(s + 4); break;
+////////		case 3:putchar(s + 3);
+////////		default:putchar(s + 2); break;
+////////		}
+////////	}
+////////	printf("\n");
+//////
+//////
+//////	//5.10
+//////	//int i, n;
+//////	//float sum=0;
+//////	//printf("请输入n的值：");
+//////	//scanf_s("%d", &n);
+//////	//for (i = 1; i <= n; i++)
+//////	//{
+//////	//	sum += 1.0 / i;
+//////	//}
+//////	//printf("%f", sum);
+//////
+//////
+//////	////5.13
+//////	//int i, j;
+//////	//float t,sum = 0;
+//////	//for (i = 1; i <= 20; i++)
+//////	//{
+//////	//	t = 1;
+//////	//	for (j = 1; j <=i; j++)
+//////	//	{
+//////	//		t = t * j;
+//////	//	}
+//////	//	sum = sum + t;
+//////	//}
+//////	//printf("%f", sum);
+//////	//int i, j, index, temp, a[10];
+//////	//printf("输入10个数：");
+//////	//for (i = 0; i < 10; i++)
+//////	//	scanf_s("%d", &a[i]);
+//////	//for (i = 0; i < 10 - 1; i++)	//10个元素选择9遍
+//////	//{
+//////	//	for (j = i + 1; j < 10; j++)
+//////	//	{
+//////	//		if (a[i] > a[j])
+//////	//		{
+//////	//			temp = a[i];
+//////	//			a[i] = a[j];
+//////	//			a[j] = temp;
+//////	//		}
+//////	//	}
+//////	//}
+//////	//for (i = 0; i < 10; i++)
+//////	//	printf("%3d", a[i]);
+//////
+//////
+//////
+//////	/*int i, j, temp, a[5];
+//////	for (i = 0; i < 5; i++)
+//////		scanf_s("%d", &a[i]);
+//////	for(i=0;i<5-1;i++)
+//////		for (j = i + 1; j < 5; j++)
+//////			if (a[i] > a[j])
+//////			{
+//////				temp = a[i];
+//////				a[i] = a[j];
+//////				a[j] = temp;
+//////			}
+//////	for (i = 0; i < 5; i++)
+//////		printf("%3d", a[i]);*/
+//////
+//////
+//////	/*char str[3][20] = { "C program","VC++6.0","Data structure" };
+//////	int i, j;
+//////	for (i = 0; i < 3; i++)
+//////	{
+//////		for (j = 0; j < 20; j++)
+//////			printf("%c", str[i][j]);
+//////		printf("\n");
+//////	}
+//////	return 0;*/
+//////
+////////#include"stdio.h"
+////////int main()
+////////{
+////////	int i, j, array[4][4];
+////////	int row = 0, col = 0;
+////////	for (i = 0; i < 4; i++)
+////////		for (j = 0; j < 4; j++)
+////////			array[i][j] = i + j;
+////////	for (i = 0; i < 4; i++)
+////////	{
+////////		for (j = 0; j < 4; j++)
+////////			printf("%6d", array[i][j]);
+////////		printf("\n");
+////////	}
+////////	for (i = 0; i < 4; i++)
+////////		for (j = 0; j < 4; j++)
+////////			if (array[i][j] > array[row][col])
+////////			{
+////////				row = i;
+////////				col = j;
+////////			}
+////////	printf("则最大值所在的行和列分别为为：%3d%3d\n值为%3d", row + 1, col + 1, array[row][col]);
+//////
+//////
+//////
+//////
+////////int a[] = { 1,2,3 };
+////////int* p, i;
+////////p = a;
+////////for (i = 0; i < 3; i++)
+////////	printf("%d\t%d\t%d\t%d\t\n", a[i], p[i], *(p + i), *(a + i));
+//////
+//////
+////////	return 0;
+////////}
+//////
+////////8.3.3
+////////void fun(char* str, int i)
+////////{
+////////	str[i] = '\0';
+////////	printf("%s\n", str);
+////////	if (i > 1)
+////////		fun(str, i - 1);
+////////}
+////////int main()
+////////{
+////////char str[] = "abcd";
+////////fun(str, 4);
+////////return 0;
+////////}
+//////
+////////8.3.4
+////////int main()
+////////{
+////////	//int a[10], i, * p;
+////////	//p = a;
+////////	//for (i = 0; i < 10; i++)
+////////	//{
+////////	//	*(p+i) = i;
+////////	//}
+////////	//for (i = 0; i < 10; i++)
+////////	//	printf("%d\n", *(p+i));
+////////
+////////
+////////
+////////	return 0;
+////
+////
+////
+////
+//////#include"stdio.h"
+////////从键盘输入一个学生的成绩（百分制），如果成绩超出范围，这个给出输入有误的提示；
+////////否则，给出成绩等级（分为A、B、C、D、E,5个等级）；
+//////int cjdjjc()
+//////{
+//////	int score;	//定义变量score为整型
+//////	printf("input score\n");
+//////	scanf_s("%d", &score);
+//////	if (score >= 0 && score <= 100)		//学生的成绩（百分制）
+//////	{
+//////		switch (score/10)
+//////		{
+//////		case 0:
+//////		case 1:
+//////		case 2:printf("E"); break;
+//////		case 3:
+//////		case 4:printf("D"); break;
+//////		case 5:
+//////		case 6:printf("C"); break;
+//////		case 7:
+//////		case 8:printf("B"); break;
+//////		case 9:
+//////		case 10:printf("A"); break;	//分为A、B、C、D、E,5个等级
+//////		default:printf("error");
+//////		}
+//////	}
+//////	else
+//////		printf("error");	//成绩超出范围
+//////	return 0;
+//////}
+//////从键盘输入一个数学运算表达式（包括加减乘除以及幂，如：a + b,
+//////a - b, a* b, a / b, a^ b），要求计算该表达式的值，当输入为N或n时停止计算；
+//////int jssxysbds()
+//////{
+//////	
+//////	int i;
+//////	double a, b, c=0;
+//////	char d;
+//////	printf("输入表达式：\n");
+//////	scanf_s("%lf%c%lf", &a,&d,&b);
+//////	switch (d)
+//////	{
+//////	case'+': c = a + b; break;
+//////	case'-': c = a - b; break;
+//////	case'*': c = a * b; break;
+//////	case'^': for (i = b, c = 1; i > 0; i--) c *= a; break;
+//////	case'/':
+//////		if (b != 0)
+//////			c = a / b;
+//////		else
+//////			printf("除数不可为0");
+//////		break;
+//////	}
+//////	printf("%lf\n", c); 
+//////	return 0;
+//////}
+//////int pymmdw()
+//////{
+//////	char c;
+//////	c = getchar();
+//////	while (c != '\n')
+//////	{
+//////		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+//////		{
+//////			if ((c >= 'v' && c <= 'z') || (c >= 'v' && c <= 'Z'))
+//////			{
+//////				c = c - 21;
+//////			}
+//////			else
+//////				c = c + 5;
+//////		}
+//////		printf("%c", c);
+//////		c = getchar();
+//////	}
+//////	printf("\n");
+//////	return 0;
+//////}
+////
+//////int main()
+//////{
+//////	int i;
+//////	printf("1.成绩等级检查\n2.计算数学运算表达式\n3.破译密码电文");
+//////	printf("请选择菜单1~3\n");
+//////	scanf_s("%d", &i);
+//////	if (i == 1) cjdjjc();
+//////	if (i == 2) jssxysbds();
+//////	if (i == 3) pymmdw();
+//////	return 0;
+//////}
+////
+////
+////#include"stdio.h"
+////int main()
+////{
+////	int i,a[3],*pi;
+////	for (i = 0; i < 3; i++)
+////	{
+////		printf("input a[%d]=",i);
+////		scanf_s("%d", &a[i]);
+////	}
+////	pi = a;
+////	printf("输出为：\n");
+////		for (i = 0; i < 3; i++)
+////		{
+////			printf("%d\t", *(pi + i));
+////		}
+////		printf("\n");
+////		for (i = 0; i < 3; i++)
+////		{
+////			printf("%d\t", *(a+i));
+////		}
+////	return 0;
+////}
+//
+//
+//
+//
+//
+//#include"stdio.h"
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int i, sum = 3;
+//	for (i = 0; i < 5; i++)
+//		arr[i] = i * (i + 1);
+//	for (i = 0; i < 4; i++)
+//		sum += arr[i] * 3;
+//	printf("%d", sum);
+//	return 0;
+//}
+
+//#include"stdio.h"
+//int main()
+//{
+//	int a, b, c, max, min, sum;
+//	printf("input a,b,c\n");
+//	scanf_s("%d%d%d", &a, &b, &c);
+//	max = a;
+//	min = a;
+//	sum = a + b + c;
+//	if (b > max)
+//	{
+//		max = b;
+//		if (c > max)
+//			max = c;
+//	}
+//	if (b < min)
+//	{
+//		min = b;
+//		if (c < min)
+//			min = c;
+//	}
+//	printf("最小:%d\n最大:%d\n", min, max);
+//	printf("%d\t%d\t%d", min, sum-min-max, max);
+//	return 0;
+//}
+////逆序输出整数
+//#include"stdio.h"
+//int main()
+//{
+//	int num;
+//	printf("input num\n");
+//	scanf_s("%d", &num);
+//	while (num != 0)
+//	{
+//		printf("%d", num % 10);
+//		num /= 10;
+//	}
+//	return 0;
+//}
+
+//#include"stdio.h"
+//int main()
+//{
+//	struct student		//声明结构体 student
+//	{
+//		char id[5];		//学生学号 (四位)
+//		char name[40];	//学生 姓名
+//		float score;	//期末总成绩
+//		int num;		//名次
+//	} stu[100], temp;	//定义结构体对象数组stu利
+//	int i, j, n;
+//	char ch;
+//	FILE* fin, * fout;	//定 义文件指针
+//	fin = fopen("scoreln. txt", "r"); 
+//	fout = fopen("scoreOut. txt", "w"); 
+//	if (fin == NULL || fout == NULL)
+//	{
+//		printf("文件读取失败! ");
+//		exit(1);
+//	}
+//	fscanf(fin, "%d\n", &n);	//读取学生人数
+//	for (i = 0; i < n; i++)	// A:逐行读取学生信息
+//	{
+//		fscanf(fin, "%s",stu[i].id);
+//		fscanf(fin, "%s", stu[i].name);
+//		fscanf(fin, "%f\n", &stu[i].score);
+//	 }
+//	for (i = 0; i < n; i++)		//按成绩排序
+//	{
+//		for (j = i + 1; j < n; j++)
+//			if (stu[i].score < stu[j].score)
+//			{
+//				temp = stu[i];
+//				stu[i] = stu[j];
+//				stu[j] = temp;
+//			}		//结构体变量整体交换
+//		stu[i].num = i + 1;
+//	}
+//	for (i = 0; i < n; i++)		// B:逐行输出到文件
+//	{
+//		fprintf(fout, "%s ", stu[i].id);
+//		fprintf(fout, "%s ", stu[i].name);
+//		fprintf(fout, "%. 2f " ,stu[i].score);
+//		fprintf(fout, "%dIn", stu[i].num);	//输出名次
+//	}
+//	fclose(fin);
+//	fclose(fout);
+//	fin = fopen(" scoreln. txt", "r");
+//	fscanf(fin, "%c", &ch);
+//	printf(" scoreln. txt的内容为: \n");
+//	while (!feof(fin))
+//	{
+//		putchar(ch);
+//		fscanf(fin, "%c", &ch);
+//	}
+//	fclose(fin);
+//	fout = fopen(" scoreOut. txt", "r");
+//	fscanf(fout, "%c", &ch);
+//	printf("\n\nscore0ut. txt的内容为: \n");
+//	while (!feof(fout))
+//	{
+//		putchar(ch);
+//		fscanf(fout, "%c", &ch);
+//	}
+//	fclose(fout);
+//	return 0;
+//}
+//
+//#include"stdio.h"
+//#include"math.h"
+//void ASCII()
+//{
+//	char ch;
+//	printf("input letters : \n");
+//	scanf_s("%c,&ch");
+//	printf("大写字母：%c\n小写字母大写对应ASCII码为：%d", ch - 32, ch, ch - 32);
+//
+//}
+//void qiuzhi()
+//{
+//float a, b;
+//printf("input a,b\n");
+//scanf_s(" % f % f", &a,&b); 
+//printf("和为%.0f\t商为f\t余数为%d\t平均值为%f\t", a + b, a / b, (int)a % (int)b, (a + b) / 2.0);
+//}
+//
+//void exchange()
+//{
+//	int a, b, c;
+//	printf("input a, b\n");
+//	scanf_s("% d % d", &a, &b);
+//	c = a; a = b; b = c;
+//	printf("%d\t%d", a, b);
+//}
+//
+//void qiushishugen()
+//{
+//	float a, b, c, delta, x1=0, x2=0;
+//	printf("input a,b,c\n");
+//	scanf("%f%f%f", &a, &b, &c);
+//	delta = b * b - 4 * a * c;
+//	x1 = (-b + sqrt(delta)) / (2 * a);
+//	x1 = (-b - sqrt(delta)) / (2 * a);
+//	printf("\nx1=%f\nx2=%f\n");
+//}
+
+
+//#include"stdio.h"
+//int main()
+//{
+//	int a=0, b=10;
+//	while (b > a)
+//	{
+//		printf("\a");
+//		a++;
+//	}
+//	return 0;
+//}
+
+
+#include"stdio.h"
+int main()
+{
+	int num;
+	scanf("%d", &num);
+	while (num != 0)
+	{
+		printf("%d",num % 10);
+		num /= 10;
+	}
+	return 0;
+}
+
