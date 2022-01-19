@@ -24,6 +24,7 @@
     <ProjectGuid>{5fe21fc0-0d5a-4a93-9dab-3d551a1cd238}</ProjectGuid>
     <RootNamespace>例题62实践</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>用数组处理多个学生高于平均成绩的人数</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="例题6.2实践.cpp" />
+    <ClCompile Include="用数组处理多个学生高于平均成绩的人数.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

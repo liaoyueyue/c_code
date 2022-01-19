@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题6.13实践.cpp">
+    <ClCompile Include="二维数组按矩阵形式输出.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

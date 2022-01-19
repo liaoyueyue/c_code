@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="课堂随堂三题.cpp">
+    <ClCompile Include="输入成绩，转化等级、求m~n之间整数之和%28积%29、求n！.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

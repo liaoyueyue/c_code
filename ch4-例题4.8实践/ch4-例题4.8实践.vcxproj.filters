@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch4-例题4.8实践.c">
+    <ClCompile Include="输出相应的星期.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

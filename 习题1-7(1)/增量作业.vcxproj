@@ -24,7 +24,7 @@
     <ProjectGuid>{6c827203-d2c3-4171-9c0e-1bed4c25524f}</ProjectGuid>
     <RootNamespace>增量作业</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>习题1-7(1)</ProjectName>
+    <ProjectName>printf的运用</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="习题1-7（1）.c" />
+    <ClCompile Include="printf的运用.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

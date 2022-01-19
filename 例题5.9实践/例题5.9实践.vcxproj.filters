@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题5.9实践.c">
+    <ClCompile Include="1、2、3、4组三位数.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

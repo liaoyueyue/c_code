@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="习题5-4(3).cpp">
+    <ClCompile Include="统计字符串内字母、空格、数字和其他字符的个数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

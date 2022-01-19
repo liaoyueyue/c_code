@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="习题1-7（1）.c">
+    <ClCompile Include="printf的运用.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

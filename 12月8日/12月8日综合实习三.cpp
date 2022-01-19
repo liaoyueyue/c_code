@@ -29,7 +29,7 @@ int yycj()
     {
         printf("请输入第%d小组的成绩：\n",i+1);
         for (j = 0; j < 5; j++)
-            scanf_s("%d", &a[i][j]);
+            scanf("%d", &a[i][j]);
     }
     for (i = 0; i < 3; i++)
     {
@@ -69,7 +69,7 @@ int cjdpx()
         printf("第%d个同学的记录：", i + 1);
         gets_s(name[i]);
         for (j = 0; j < 3; j++)
-            scanf_s("%d", &score[i][j]);
+            scanf("%d", &score[i][j]);
     }
     //计算每个同学的总分和平均分；
     for (i = 0; i < N; i++)
@@ -129,7 +129,7 @@ int main()
 	int i;
 	printf("1.波那契数列的前30项\n2.存储某班级3个学习小组的英语成绩\n3.5个同学总成绩的高低排序的成绩单");
 	printf("请选择菜单1~3\n");
-	scanf_s("%d", &i);
+	scanf("%d", &i);
 	if (i == 1) mblq();
 	if (i == 2) yycj();
 	if (i == 3) cjdpx();

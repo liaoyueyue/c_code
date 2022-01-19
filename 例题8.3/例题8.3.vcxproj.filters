@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题8.3.cpp">
+    <ClCompile Include="用指针为两个数排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

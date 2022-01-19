@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题5.7实践.c">
+    <ClCompile Include="输出以下4x5矩阵.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

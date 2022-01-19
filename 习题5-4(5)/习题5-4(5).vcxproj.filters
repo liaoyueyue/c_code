@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="习题5-4(5).cpp">
+    <ClCompile Include="斐波那契分数数列的前n项之和.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题5-5.c">
+    <ClCompile Include="1000名学生募捐.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

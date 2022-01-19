@@ -24,7 +24,7 @@
     <ProjectGuid>{62a9960a-4121-45c2-a13d-cc766d0de138}</ProjectGuid>
     <RootNamespace>ch4例题47实践</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>例题4.7实践</ProjectName>
+    <ProjectName>输出学生成绩状况switch</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ch4-例题4.7实践.c" />
+    <ClCompile Include="输出学生成绩状况switch.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

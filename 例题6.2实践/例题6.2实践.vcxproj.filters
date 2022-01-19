@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题6.2实践.cpp">
+    <ClCompile Include="用数组处理多个学生高于平均成绩的人数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

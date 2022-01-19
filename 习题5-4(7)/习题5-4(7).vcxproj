@@ -24,6 +24,7 @@
     <ProjectGuid>{2172e779-1f08-4a89-8365-ba5a389b7820}</ProjectGuid>
     <RootNamespace>习题547</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>求Sn=a+aa+aaa+..+aa...a的值</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="习题5-4(7).cpp" />
+    <ClCompile Include="求Sn=a+aa+aaa+..+aa...a的值.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

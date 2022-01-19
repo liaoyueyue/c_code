@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="习题2-6(1).c">
+    <ClCompile Include="知底高求三角形面积.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

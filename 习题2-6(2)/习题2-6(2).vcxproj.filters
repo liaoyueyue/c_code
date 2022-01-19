@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="习题2-6(2).c">
+    <ClCompile Include="求商和余数.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

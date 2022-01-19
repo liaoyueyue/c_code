@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题5.10实践.cpp">
+    <ClCompile Include="分数前n项求和.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

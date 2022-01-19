@@ -15,8 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="习题3-11.c">
-      <Filter>资源文件</Filter>
+    <ClCompile Include="知三边求三角形面积.c">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

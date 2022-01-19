@@ -21,9 +21,9 @@ int compare()
 {
 	struct date x, y;         //定义两个date结构体对象x和y
 	printf("输入日期X（yyyy-mm-dd）:");
-	scanf_s("%d-%d-%d", &x.year, &x.month, &x.day);
+	scanf("%d-%d-%d", &x.year, &x.month, &x.day);
 	printf("输入日期Y（yyyy-mm-dd）:");
-	scanf_s("%d-%d-%d", &y.year, &y.month, &y.day);
+	scanf("%d-%d-%d", &y.year, &y.month, &y.day);
 	if (compare_(x, y))
 		printf("日期X比较早！");
 	else
@@ -44,22 +44,22 @@ int sorting()
 	} student[100], temp;	//定义结构体对象数组
 	int i, j, n;
 	printf("输入学生人数(1~100) : ");
-	scanf_s("%d", &n);
+	scanf("%d", &n);
 	printf("-----------------------\n");
 	for (i = 0; i < n; i++) //输入学生成绩
 	{
 		printf("学号输入9999则停止输入! \n");
 		printf("学号(9999) :");
-		scanf_s("%s", student[i].id);
+		scanf("%s", student[i].id);
 		if (strcmp(student[i].id, "9999") == 0)
 		{
 			n = i;
 			break;
 		}
 		printf("姓名: ");
-		scanf_s("%s", student[i].name);
+		scanf("%s", student[i].name);
 		printf("总成绩: ");
-		scanf_s("%f", &student[i].score);
+		scanf("%f", &student[i].score);
 		printf("-----------------------\n");
 	}
 	for (i = 0; i < n; i++)	//按成绩排序
@@ -132,7 +132,7 @@ int main()
 	int i;
 	printf("1.比较输入的两个日期的迟早\n2.进行学生成绩数据的输入\n3.按顺序存储整数 1 至 n，然后再在所有偶数后面插入星号");
 	printf("请选择菜单1~3\n");
-	scanf_s("%d", &i);
+	scanf("%d", &i);
 	if (i == 1) compare();
 	if (i == 2) sorting();
 	if (i == 3) insert();

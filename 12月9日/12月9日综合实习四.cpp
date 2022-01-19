@@ -8,7 +8,7 @@ int paixu()
 	pb = &b;
 	pc = &c;
 	printf("input a,b,c\n");
-	scanf_s("%d%d%d", &a, &b, &c);
+	scanf("%d%d%d", &a, &b, &c);
 	printf("排序前：\n%d\t%d\t%d\n",*pa,*pb,*pc);
 	if (*pa < *pb)
 	{
@@ -61,7 +61,7 @@ int main()
 	int i;
 	printf("1.输入a、b、c 3个整数，按从大到小顺序输出\n2.用字符数组、指针、递归函数实现输入字符串:\n");
 	printf("请选择菜单1~2\n");
-	scanf_s("%d", &i);
+	scanf("%d", &i);
 	if (i == 1) paixu();
 	if (i == 2) shuchuzifuchuan();
 	return 0;

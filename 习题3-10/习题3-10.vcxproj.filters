@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="习题3-10.c">
+    <ClCompile Include="三位数的逆输出.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

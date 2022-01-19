@@ -24,7 +24,7 @@
     <ProjectGuid>{c2a6673c-4837-4309-a837-3f5503191531}</ProjectGuid>
     <RootNamespace>习题545</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>习题5-4(5)</ProjectName>
+    <ProjectName>斐波那契分数数列的前n项之和</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="习题5-4(5).cpp" />
+    <ClCompile Include="斐波那契分数数列的前n项之和.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

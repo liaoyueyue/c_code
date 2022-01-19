@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题8.1.cpp">
+    <ClCompile Include="分析指针的初始化程序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

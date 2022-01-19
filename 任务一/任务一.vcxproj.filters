@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="任务一.c">
+    <ClCompile Include="求小组学生总分平均分.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

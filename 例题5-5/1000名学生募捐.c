@@ -9,7 +9,7 @@ int main()
 	for (i = 1,sum=0; i <= 1000; i++)
 	{
 		printf("请输入第%d学生的捐款金额：\n",i);
-		scanf_s("%f", &amount);
+		scanf("%f", &amount);
 		sum += amount;
 		if (sum >= amountmax)
 		{

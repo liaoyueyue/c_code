@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch4-例题4.10实践.c">
+    <ClCompile Include="数学四则运算.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -24,6 +24,7 @@
     <ProjectGuid>{1132fa43-1838-4c20-9dc1-cb0a6eac4319}</ProjectGuid>
     <RootNamespace>例题613实践</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>二维数组按矩阵形式输出</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="例题6.13实践.cpp" />
+    <ClCompile Include="二维数组按矩阵形式输出.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

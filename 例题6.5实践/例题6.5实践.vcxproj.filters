@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题6.5实践.cpp">
+    <ClCompile Include="在多名学生成绩中查找指定成绩.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

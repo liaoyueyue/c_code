@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题8.2.cpp">
+    <ClCompile Include="同类型指针变量相互赋值.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

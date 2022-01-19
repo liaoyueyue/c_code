@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="例题6.3实践.cpp">
+    <ClCompile Include="数组的反向输出.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

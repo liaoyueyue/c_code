@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\习题1-7(1)\习题1-7(2).c">
+    <ClCompile Include="..\习题1-7%281%29\求平方.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

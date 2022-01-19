@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch4-例题4.9实践.c">
+    <ClCompile Include="三个整数求最大值.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

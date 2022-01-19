@@ -7,7 +7,7 @@ int main()
 	for (i = 0; i < 10; i++)
 	{
 		printf("请输入第%d个数", i + 1);
-		scanf_s("%d", &a[i]);
+		scanf("%d", &a[i]);
 	}
 	printf("\n");
 	for(i=1;i<10;i++)
