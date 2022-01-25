@@ -690,6 +690,126 @@
 //	return 0;
 //}
 
+//#include"stdio.h"
+//int main()
+//{
+//	int num;
+//	scanf("%d", &num);
+//	while (num != 0)
+//	{
+//		printf("%d",num % 10);
+//		num /= 10;
+//	}
+//	return 0;
+//}
+//
+
+
+////计算n的阶乘
+//#include"stdio.h"
+//int main1()
+//{
+//	int i, n,sum=1;
+//	scanf_s("%d", &n);
+//	for (i = 1; i <= n; i++)
+//	{
+//		sum *= i;
+//	}
+//	printf("%d", sum);
+//	return 0;
+//}
+
+////计算n的阶乘的前n项和
+//#include"stdio.h"
+//int main()
+//{
+//	int i, n, sum1 = 1, sum2 = 0;
+//	scanf_s("%d", &n);
+//	for (i = 1; i <= n; i++)
+//	{
+//		sum1 *= i;
+//		sum2 += sum1;
+//	}
+//	printf("%d", sum2);
+//	return 0;
+//}
+
+////在一个无序数组中查找具体的某个数字n
+//#include"stdio.h"
+//int main()
+//{
+//	int i;
+//	int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 } , n = 2;
+//	for (i = 0; i < sizeof(arr)/sizeof(arr[0]); i++)
+//	{
+//		if (arr[i] == n)
+//		{
+//			printf("该数组存在数字%d\n", n);
+//			break;	//如果找到则跳出循环
+//		}
+//	}
+//	if (i == sizeof(arr) / sizeof(arr[0]))
+//		printf("该数组不存在数字%d\n",n);
+//	return 0;
+//}
+
+
+////多个字符从两端移动向中间汇聚；
+//#include"stdio.h"
+//#include"string.h"
+//#include"windows.h"
+//int main()
+//{
+//	char arr1[] = "Welcome to jingzhou";
+//	char arr2[] = "                                            ";
+//	int left = 0;//数组第一个下标
+//	int right = strlen(arr1)-1;//数组最后一个下标
+//	
+//	while (left <= right)
+//	{
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//		printf("%s\n", arr2);
+//		left++;
+//		right--;
+//		Sleep(1000);//睡眠一秒
+//		system("cls");//清空屏幕，clear(清除）
+//	}
+//
+//	printf("%s", arr2);
+//	return 0;
+//}
+//
+
+////模拟用户登录，只能登陆三次，密码正确则提示成功，三次都错误则退出程序
+//#include"stdio.h"
+//#include"string.h"
+//int main()
+//{
+//	int i = 0;
+//	char password[20] = { 0 };
+//	/*假如正确的密码是字符串"123456"*/
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("请输入密码：");
+//		scanf("%s", password);
+//		if ((strcmp(password, "123456")) == 0)//两个字符串比较不能用==，应该使用strcmp
+//		{
+//			printf("密码正确，登录成功!\n");
+//			break;
+//		}
+//		else
+//		{
+//			printf("密码错误，请重新输入!\n");
+//		}
+//	}
+//	if (i == 3)
+//	{
+//		printf("三次密码错误，退出程序\n");
+//	}
+//	return 0;
+//}
+
 
 ////猜数字小游戏
 //#include"stdio.h"
