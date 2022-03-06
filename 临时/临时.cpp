@@ -1235,3 +1235,107 @@
 //	printf("%d", ret);
 //	return 0;
 //}
+
+//#include"stdio.h"
+//int main()
+//{
+//	int a[] = { 9,8,7,6,5,4,3,2,1,0 };
+//	int i = 0;
+//	int j = 0;
+//	for (i = 0; i < 10-1; i++)
+//	{
+//		for (j = 0; j < 10 - 1 - i; j++)
+//		{
+//			if (a[j] > a[j + 1])
+//			{
+//				int temp = 0;
+//				temp = a[j];
+//				a[j] = a[j + 1];
+//				a[j + 1] = temp;
+//			}
+//		}
+//	}
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d", a[i]);
+//	}
+//	return 0;
+//}
+
+//
+////my_strcpyµÄÊµÏÖ
+//#include"stdio.h"
+//#include"string.h"
+//
+//void my_strcpy(char* desr,const char* src)
+//{
+//	while (*desr != '\0')
+//	{
+//		*desr++ = *src++;
+//	}
+//}
+//
+//int main()
+//{
+//	char arr1[] = "xxxxxxxxxxxx";
+//	char arr2[] = "hello";
+//	my_strcpy(arr1, arr2);
+//	printf("%s\n", arr1);
+//	return 0;
+//}
+//
+//int NumberOf1_2(int n)
+//{
+//	unsigned int m = n;
+//	int count = 0;
+//	while (m)
+//	{
+//		if (m % 2 == 1)
+//		{
+//			count++;
+//		}
+//		m /= 2;
+//	}
+//	return count;
+//}
+//
+//int NumberOf1_3(int n)
+//{
+//	int count = 0;
+//	while (n)
+//	{
+//		n = n & (n - 1);
+//		count++;
+//	}
+//	return count;
+//}
+//#include"stdio.h"
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int ret = NumberOf1(n);
+//	printf("%d", ret);
+//	return 0;
+//}
+
+//#include <stdio.h>
+//int main()
+//{
+//    int n;
+//    while (scanf("%d", &n) != EOF) {
+//        int i, j;
+//        for (i = 0; i < n; i++) {
+//            for (j = 0; j < n; j++) {
+//                if (i == j || i + j == n - 1) {
+//                    printf("*");
+//                }
+//                else {
+//                    printf(" ");
+//                }
+//            }
+//            printf("\n");
+//        }
+//    }
+//}
+
