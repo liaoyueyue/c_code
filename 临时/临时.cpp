@@ -1235,3 +1235,51 @@
 //	printf("%d", ret);
 //	return 0;
 //}
+
+//#include"stdio.h"
+//int main()
+//{
+//	int a[] = { 9,8,7,6,5,4,3,2,1,0 };
+//	int i = 0;
+//	int j = 0;
+//	for (i = 0; i < 10-1; i++)
+//	{
+//		for (j = 0; j < 10 - 1 - i; j++)
+//		{
+//			if (a[j] > a[j + 1])
+//			{
+//				int temp = 0;
+//				temp = a[j];
+//				a[j] = a[j + 1];
+//				a[j + 1] = temp;
+//			}
+//		}
+//	}
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d", a[i]);
+//	}
+//	return 0;
+//}
+
+
+//my_strcpyµÄÊµÏÖ
+#include"stdio.h"
+#include"string.h"
+
+void my_strcpy(char* desr,char* src)
+{
+	while (*desr != '\0')
+	{
+		*desr++ = *src++;
+	}
+}
+
+int main()
+{
+	char arr1[] = "xxxxxxxxxxxx";
+	char arr2[] = "hello";
+	my_strcpy(arr1, arr2);
+	printf("%s\n", arr1);
+	return 0;
+}
