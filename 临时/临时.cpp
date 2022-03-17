@@ -1338,4 +1338,61 @@
 //        }
 //    }
 //}
+//
+////用函数指针数组写一个计算器
+//#include"stdio.h"
+//
+//int Add(int x, int y)
+//{
+//	return x + y;
+//}
+//
+//int Sub(int x, int y)
+//{
+//	return x - y;
+//}
+//
+//int Mul(int x, int y)
+//{
+//	return x * y;
+//}
+//
+//int Div(int x, int y)
+//{
+//	return x / y;
+//}
+//
+//void menu()
+//{
+//	printf("********************************\n");
+//	printf("********************************\n");
+//	printf("*********1、打开计算器***********\n");
+//	printf("*********0、退出计算器***********\n");
+//	printf("********************************\n");
+//	printf("********************************\n");
+//}
+//
+//
+//int main()
+//{
+//	int x = 0;
+//	int y = 0;
+//	do 
+//	{	
+//		printf("请输入x,y的值：\n");
+//		scanf("%d %d", &x, &y);
+//		printf("-------------------------\n");
+//		int (*pr[4])(int, int) = { Add, Sub, Mul, Div };
+//		int i = 0;
+//		for (i = 0; i < 4; i++)
+//		{
+//			int ret = pr[i](x, y);
+//			printf("%d\n", ret);
+//		}
+//		printf("-------------------------\n");
+//	} while (1);
+//	return 0;
+//}
+
+
 
