@@ -1338,4 +1338,90 @@
 //        }
 //    }
 //}
+//
+////用函数指针数组写一个计算器
+//#include"stdio.h"
+//
+//int Add(int x, int y)
+//{
+//	return x + y;
+//}
+//
+//int Sub(int x, int y)
+//{
+//	return x - y;
+//}
+//
+//int Mul(int x, int y)
+//{
+//	return x * y;
+//}
+//
+//int Div(int x, int y)
+//{
+//	return x / y;
+//}
+//
+//void menu()
+//{
+//	printf("********************************\n");
+//	printf("********************************\n");
+//	printf("*********1、打开计算器***********\n");
+//	printf("*********0、退出计算器***********\n");
+//	printf("********************************\n");
+//	printf("********************************\n");
+//}
+//
+//
+//int main()
+//{
+//	int x = 0;
+//	int y = 0;
+//	do 
+//	{	
+//		printf("请输入x,y的值：\n");
+//		scanf("%d %d", &x, &y);
+//		printf("-------------------------\n");
+//		int (*pr[4])(int, int) = { Add, Sub, Mul, Div };
+//		int i = 0;
+//		for (i = 0; i < 4; i++)
+//		{
+//			int ret = pr[i](x, y);
+//			printf("%d\n", ret);
+//		}
+//		printf("-------------------------\n");
+//	} while (1);
+//	return 0;
+//}
+
+
+//qsort的练习
+
+#include"stdio.h"
+#include"stdlib.h"
+
+int int_sort(const void* e1, const void* e2)
+{
+	return(*(int*)e1 - *(int*)e2);
+}
+
+void print(int arr[], int sz)
+{
+	int i = 0;
+	for (i = 0; i < sz; i++)
+	{
+		printf("%d", arr[i]);
+	}
+	printf("\n");
+}
+//使用qsort来进行整形的排序
+int main()
+{
+	int arr[] = { 5,9,8,4,2,3,1,6,7,0 };
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	print(arr, sz);
+	qsort(arr, sz, sizeof(arr[0]), int_sort);
+	print(arr, sz);
+	return 0;
+}
 

@@ -177,7 +177,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "课后任务7", "课后任�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "课后任务8", "课后任务8\课后任务8.vcxproj", "{F9CCE3D7-C616-424B-8D60-9645D637F750}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "寒假练习", "寒假练习", "{4CCB7376-682E-415A-AD90-3EFF3FA1CF4C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "比特练习", "比特练习", "{4CCB7376-682E-415A-AD90-3EFF3FA1CF4C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_1", "test_1\test_1.vcxproj", "{20E988B5-9AFA-4056-9C3F-75651692EE85}"
 EndProject
@@ -238,6 +238,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_29", "test_29\test_29.vcxproj", "{AA488923-C5AB-4D29-8F61-CE00FC122A1C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_30", "test_30\test_30.vcxproj", "{B58764FE-69B3-41A9-BA8B-6AD4ACFF85AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_31", "test_31\test_31.vcxproj", "{1C1A3CAA-10CE-4A6C-9E02-551DE3BA6FDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1111,6 +1113,14 @@ Global
 		{B58764FE-69B3-41A9-BA8B-6AD4ACFF85AC}.Release|x64.Build.0 = Release|x64
 		{B58764FE-69B3-41A9-BA8B-6AD4ACFF85AC}.Release|x86.ActiveCfg = Release|Win32
 		{B58764FE-69B3-41A9-BA8B-6AD4ACFF85AC}.Release|x86.Build.0 = Release|Win32
+		{1C1A3CAA-10CE-4A6C-9E02-551DE3BA6FDE}.Debug|x64.ActiveCfg = Debug|x64
+		{1C1A3CAA-10CE-4A6C-9E02-551DE3BA6FDE}.Debug|x64.Build.0 = Debug|x64
+		{1C1A3CAA-10CE-4A6C-9E02-551DE3BA6FDE}.Debug|x86.ActiveCfg = Debug|Win32
+		{1C1A3CAA-10CE-4A6C-9E02-551DE3BA6FDE}.Debug|x86.Build.0 = Debug|Win32
+		{1C1A3CAA-10CE-4A6C-9E02-551DE3BA6FDE}.Release|x64.ActiveCfg = Release|x64
+		{1C1A3CAA-10CE-4A6C-9E02-551DE3BA6FDE}.Release|x64.Build.0 = Release|x64
+		{1C1A3CAA-10CE-4A6C-9E02-551DE3BA6FDE}.Release|x86.ActiveCfg = Release|Win32
+		{1C1A3CAA-10CE-4A6C-9E02-551DE3BA6FDE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1226,6 +1236,7 @@ Global
 		{D6604065-3286-49A6-B09F-AB0EA2992033} = {4CCB7376-682E-415A-AD90-3EFF3FA1CF4C}
 		{AA488923-C5AB-4D29-8F61-CE00FC122A1C} = {4CCB7376-682E-415A-AD90-3EFF3FA1CF4C}
 		{B58764FE-69B3-41A9-BA8B-6AD4ACFF85AC} = {4CCB7376-682E-415A-AD90-3EFF3FA1CF4C}
+		{1C1A3CAA-10CE-4A6C-9E02-551DE3BA6FDE} = {4CCB7376-682E-415A-AD90-3EFF3FA1CF4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7259D3C5-70CA-4B29-9262-ABD528BDAA8E}

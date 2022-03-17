@@ -19,3 +19,9 @@ int main()
 		printf("加法的运算结果为%f\n减法的运算结果为%f\n乘法的运算结果为%f\n除法的运算结果为%f\n", x + y, x - y, x * y, x / y);
 	return 0;
 }
+
+
+
+
+
+
