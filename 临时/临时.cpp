@@ -1414,6 +1414,7 @@ void print(int arr[], int sz)
 	}
 	printf("\n");
 }
+
 //使用qsort来进行整形的排序
 int main()
 {
