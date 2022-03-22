@@ -1395,34 +1395,213 @@
 //}
 
 
-//qsort的练习
+////qsort的练习
+//
+//#include"stdio.h"
+//#include"stdlib.h"
+//
+//int int_cmp(const void* e1, const void* e2)
+//{
+//	return(*(int*)e1 - *(int*)e2);
+//}
+//
+//void print(int arr[], int sz)
+//{
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//	printf("\n");
+//}
+//
+////使用qsort来进行整形的排序
+//int main()
+//{
+//	int arr[] = { 5,9,8,4,2,3,1,6,7,0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	print(arr, sz);
+//	qsort(arr, sz, sizeof(arr[0]), int_cmp);
+//	print(arr, sz);
+//	return 0;
+//}
 
-#include"stdio.h"
-#include"stdlib.h"
 
-int int_sort(const void* e1, const void* e2)
-{
-	return(*(int*)e1 - *(int*)e2);
-}
+////qosrt函数实现char型排序
+//#include<stdio.h>
+//#include<stdlib.h>
+//int char_cmp(const void* str1, const void* str2)
+//{
+//    return *(char*)str1 - *(char*)str2;
+//}
+//
+//int main()
+//{
+//     char str[] = { 1, 3, 5, 7, 9, 2, 4, 6, 8, 0 };
+//     qsort(str, sizeof(str) / sizeof(str[0]), sizeof(char), char_cmp);
+//     for (int i = 0; i < sizeof(str) / sizeof(str[0]); i++)
+//     {
+//         printf("%d ", str[i]);
+//     }
+//
+//     return 0;
+// }
 
-void print(int arr[], int sz)
-{
-	int i = 0;
-	for (i = 0; i < sz; i++)
-	{
-		printf("%d", arr[i]);
-	}
-	printf("\n");
-}
+//#include<stdio.h>
+//#include<stdlib.h>
+//
+//typedef struct Student
+//{
+//    int x;
+//    int y;
+//    //按照x从小到大排序，当x相等时按照y从大到小排序
+//}Student;
+//
+//Student student[7];
+//
+//int cmp(const void* a, const void* b)
+//{
+//    Student* pa1 = (Student*)a;
+//    Student* pa2 = (Student*)b;
+//
+//    return (pa1->x) > (pa2->x) ? 1 : -1;
+//}
+//
+////展示一下对于结构体里赋值的后的结果
+//void Display()
+//{
+//    for (int i = 0; i < 7; ++i)
+//    {
+//        printf("%d\n", student[i].x);
+//    }
+//}
+//
+//int main()
+//{
+//    int arr[7] = { 1,3,5,2,6,9,7 };
+//    for (int i = 0; i < 7; ++i)
+//    {
+//        //将数组arr中的元素赋值给结构体x中
+//        student[i].x = arr[i];
+//    }
+//    Display();
+//    qsort(student, 7, sizeof(Student), cmp);
+//    for (int i = 0; i < 7; ++i)
+//    {
+//        printf("%d", student[i].x);
+//    }
+//
+//    return 0;
+//}
 
-//使用qsort来进行整形的排序
-int main()
-{
-	int arr[] = { 5,9,8,4,2,3,1,6,7,0 };
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	print(arr, sz);
-	qsort(arr, sz, sizeof(arr[0]), int_sort);
-	print(arr, sz);
-	return 0;
-}
+////求两个整数的最大值
+//
+//#include"stdio.h"
+//
+//int get_max(int x, int y)
+//{
+//	if (x > y)
+//	{
+//		return x;
+//	}
+//	else
+//	{
+//		return y;
+//	}
+//}
+//
+//int main()
+//{
+//	int x = 0;
+//	int y = 0;
+//	scanf("%d %d", &x, &y);
+//	int ret = get_max(x, y);
+//	printf("max=%d", ret);
+//}
+
+
+//#include <stdio.h>
+//#include <string.h>
+//
+//struct StudentList
+//{
+//    char Name[5];
+//    int Age;
+//    char Gender[5];
+//}stu;
+//
+//void ShowOneStu(struct StudentList stu)
+//{
+//    printf("%-8s%-7s%-6s\n", "Name", "Age", "Gender");
+//    printf("---------------------\n");
+//    printf("%-8s%-7d%-6s\n", stu.Name, stu.Age, stu.Gender);
+//}
+//
+//int main()
+//{
+//    //     printf("Name    Age    Gender\n");//%-8s%-7s%-6s
+//    //     printf("---------------------\n");//左对齐
+//    //     printf("Jack    18     man\n");
+//
+//    strcpy(stu.Name, "Jack");
+//    stu.Age = 18;
+//    strcpy(stu.Gender, "Man");
+//
+//    ShowOneStu(stu);
+//
+//    return 0;
+//}
+
+
+////模拟strlen
+//
+//#include"stdio.h"
+//#include"assert.h"
+//
+//int my_strlen(const char* arr)
+//{
+//	assert(arr != NULL);
+//	if (*arr != '\0')
+//	{
+//		return 1 + my_strlen(arr+1);
+//	}
+//	return 0;
+//}
+//
+//int main()
+//{
+//	char arr[] = "we come to bite";
+//	int ret = my_strlen(arr);
+//	printf("%d", ret);
+//	return 0;
+//}
+//
+
+
+////模拟strcpy
+//
+//#include"stdio.h"
+//#include"assert.h"
+//
+//char* my_strcpy(char* dest, const char* src)
+//{
+//	char* ret = dest;
+//	assert(dest != NULL);
+//	assert(src != NULL);
+//
+//	while ((*dest++ = *src++))
+//	{
+//		;
+//	}
+//	return ret;
+//}
+//
+//int main()
+//{
+//	char arr1[100];
+//	char arr2[] = "abcdef";
+//	printf("%s", my_strcpy(arr1, arr2));
+//	return 0;
+//}
+
 
