@@ -5,13 +5,11 @@
 #include"stdio.h"
 #include"assert.h"
 
-char* my_strcpy(char* dest, const char* src)
+char* my_strcpy(char* dest, const char* stc)
 {
+	assert(dest && stc);
 	char* ret = dest;
-	assert(dest != NULL);
-	assert(src != NULL);
-
-	while ((*dest++ = *src++))
+	while (*dest++ = *stc++)
 	{
 		;
 	}
@@ -20,12 +18,11 @@ char* my_strcpy(char* dest, const char* src)
 
 int main()
 {
-	char arr1[100];
+	char arr1[20] = { 0 };
 	char arr2[] = "abcdef";
 	printf("%s", my_strcpy(arr1, arr2));
 	return 0;
 }
-
 
 //#include<stdio.h>
 //#include<string.h>  
