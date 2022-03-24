@@ -1,26 +1,43 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 
 #include"stdio.h"
+#include"assert.h"
 
-int my_strcmp(char* dest, char* src)
+int my_strcmp(const char* s1, const char* s2)
 {
-	do
+	assert(s1 && s2);
+	while (*s1 == *s2)
 	{
-		if (*dest > *src)
+		if (*s1 == '\0')
 		{
-			return 1;
+			return 0;
 		}
-		else if (*dest < *src)
-		{
-			return -1;
-		}
-	} while (dest++ && src++);
+		s2++;
+		s1++;
+	}
+	return *s1 - *s2;
 }
 
 int main()
 {
-	char arr1[] = "abcdef";
-	char arr2[] = "abcdefg";
+	char arr1[] = "abcde";
+	char arr2[] = "abcdef";
 	printf("%d", my_strcmp(arr1, arr2));
 	return 0;
 }
+
+//int my_strcmp(const char* s1, const char* s2)
+//{
+//	do
+//	{
+//		if (*s1 > *s2)
+//		{
+//			return 1;
+//		}
+//		else if (*s1 < *s2)
+//		{
+//			return -1;
+//		}
+//	} while (*s1++ && *s2++);
+//	return 0;
+//}
