@@ -1605,3 +1605,29 @@
 //}
 
 
+
+#include "stdio.h"
+
+int main()
+{
+    int num, m, c, i = 0;
+    int n = 8;
+    int a[32];
+    printf("输入一个整数：");
+    scanf("%d", &num);
+    m = num;
+    while (num > 0)
+    {
+        c = (num % n);
+        a[i] = c;
+        num = num / n;
+        i++;
+    }
+    printf("十进制数%d转换成八进制数是：", m);
+    for (i--; i >= 0; i--)
+    {
+        printf("%d", a[i]);
+    }
+    printf("\n");
+    return 0;
+}
