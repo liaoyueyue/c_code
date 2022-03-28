@@ -1606,28 +1606,56 @@
 
 
 
-#include "stdio.h"
+//#include "stdio.h"
+//
+//int main()
+//{
+//    int num, m, c, i = 0;
+//    int n = 8;
+//    int a[32];
+//    printf("输入一个整数：");
+//    scanf("%d", &num);
+//    m = num;
+//    while (num > 0)
+//    {
+//        c = (num % n);
+//        a[i] = c;
+//        num = num / n;
+//        i++;
+//    }
+//    printf("十进制数%d转换成八进制数是：", m);
+//    for (i--; i >= 0; i--)
+//    {
+//        printf("%d", a[i]);
+//    }
+//    printf("\n");
+//    return 0;
+//}
+
+
+#include"stdio.h"
+#include"string.h"
+
+void* my_memcpy(void* dest, const void* src, size_t count)
+{
+	void* ret = dest;
+	while (count--)
+	{
+		*(char*)dest = *(char*)src;
+		dest = (char*)dest + 1;
+		src = (char*)src + 1;
+	}
+	return ret;
+}
 
 int main()
 {
-    int num, m, c, i = 0;
-    int n = 8;
-    int a[32];
-    printf("输入一个整数：");
-    scanf("%d", &num);
-    m = num;
-    while (num > 0)
-    {
-        c = (num % n);
-        a[i] = c;
-        num = num / n;
-        i++;
-    }
-    printf("十进制数%d转换成八进制数是：", m);
-    for (i--; i >= 0; i--)
-    {
-        printf("%d", a[i]);
-    }
-    printf("\n");
-    return 0;
+	int arr1[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	my_memcpy(arr1+2, arr1, 20);
+	int i = 0;
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d ", arr1[i]);
+	}
+	return 0;
 }
