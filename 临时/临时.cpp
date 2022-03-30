@@ -1633,29 +1633,129 @@
 //}
 
 
-#include"stdio.h"
-#include"string.h"
+//#include"stdio.h"
+//#include"string.h"
+//
+//void* my_memcpy(void* dest, const void* src, size_t count)
+//{
+//	void* ret = dest;
+//	while (count--)
+//	{
+//		*(char*)dest = *(char*)src;
+//		dest = (char*)dest + 1;
+//		src = (char*)src + 1;
+//	}
+//	return ret;
+//}
+//
+//int main()
+//{
+//	int arr1[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	my_memcpy(arr1+2, arr1, 20);
+//	int i = 0;
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", arr1[i]);
+//	}
+//	return 0;
+//}
+//
+//
 
-void* my_memcpy(void* dest, const void* src, size_t count)
-{
-	void* ret = dest;
-	while (count--)
-	{
-		*(char*)dest = *(char*)src;
-		dest = (char*)dest + 1;
-		src = (char*)src + 1;
-	}
-	return ret;
-}
+//写代码将三个整数数按从大到小输出。
+//例如：
+//
+//输入：2 3 1
+//
+//输出：3 2 1
+//
+//从大到小输出
 
-int main()
-{
-	int arr1[10] = { 1,2,3,4,5,6,7,8,9,10 };
-	my_memcpy(arr1+2, arr1, 20);
-	int i = 0;
-	for (i = 0; i < 10; i++)
-	{
-		printf("%d ", arr1[i]);
-	}
-	return 0;
-}
+//#include"stdio.h"
+//
+//int main()
+//{
+//    int a = 2;
+//    int b = 3;
+//    int c = 1;
+//    scanf("%d%d%d", &a, &b, &c);
+//    if (a < b)
+//    {
+//        int tmp = a;
+//        a = b;
+//        b = tmp;
+//    }
+//    if (a < c)
+//    {
+//        int tmp = a;
+//        a = c;
+//        c = tmp;
+//    }
+//    if (b < c)
+//    {
+//        int tmp = b;
+//        b = c;
+//        c = tmp;
+//    }
+//    printf("%d %d %d\n", a, b, c);
+//    return 0;
+//}
+
+////写一个代码打印1 - 100之间所有3的倍数的数字
+//
+//#include"stdio.h"
+//
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i <= 100; i++)
+//	{
+//		if (i % 3 == 0)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
+
+
+////两个数的最大公约数
+//
+//#include"stdio.h"
+//
+//int main()
+//{
+//	int x = 0;
+//	int y = 0;
+//	int z = 0;
+//	scanf("%d%d", &x, &y);
+//	while (z = x % y)
+//	{
+//		x = y;
+//		y = z;
+//	}
+//	printf("%d", y);
+//	return 0;
+//}
+
+
+//打印闰年
+
+//#include"stdio.h"
+//
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1000; i <= 2000; i++)
+//	{
+//		if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0)
+//		{
+//			printf("%d ", i);
+//		}
+//	}
+//	return 0;
+//}
+//
+
+//求最
+
