@@ -1776,97 +1776,197 @@
 //
 
 
-//atoi    将一个字符串转化为一个整型
-#include<stdio.h>
-#include<assert.h>	
-#include<limits.h>
-#include<ctype.h>
-enum state
-{
-	Value,
-	ErrValue
-};
-state statue = ErrValue;
-int my_atoi(const char* str)
-{
-	assert(str);
+////atoi    将一个字符串转化为一个整型
+//#include<stdio.h>
+//#include<assert.h>	
+//#include<limits.h>
+//#include<ctype.h>
+//enum state
+//{
+//	Value,
+//	ErrValue
+//};
+//state statue = ErrValue;
+//int my_atoi(const char* str)
+//{
+//	assert(str);
+//
+//	char* p = (char*)str;
+//
+//	long long n = 0;
+//	int flag = 1;
+//	//字符串长度为0
+//	if (*str == '\0')
+//	{
+//		return 0;
+//	}
+//	//字符串前面有很多空格
+//	while (*p == ' ')
+//	{
+//		p++;
+//	}
+//	//判断符号
+//	if (*p == '+')
+//	{
+//		flag = 1;
+//		p++;
+//	}
+//	else if (*p == '-')
+//	{
+//		flag = -1;
+//		p++;
+//	}
+//	//开始计算
+//	while (*p != '\0')
+//	{
+//		if (isdigit(*p))
+//		{
+//			n = n * 10 + flag * (*p - '0');
+//			if (n > INT_MAX)
+//			{
+//				n = INT_MAX;
+//				break;
+//			}
+//			else if (n < INT_MIN)
+//			{
+//				n = INT_MIN;
+//				break;
+//			}
+//		}
+//		else
+//		{
+//			break;
+//		}
+//		p++;
+//	}
+//
+//	if (*p == '\0')
+//	{
+//		statue = Value;
+//	}
+//
+//	return (int)n;
+//}/**
+// 特殊情况
+// 1前面有一大堆空格
+// 2传过来空指针
+// 3字符串长度为0
+// 4整形溢出
+// 5含有其它字符
+// */
+//
+//int main()
+//{
+//	char arr[] = "5684   7";
+//	int m = my_atoi(arr);
+//	if (statue == Value)
+//	{
+//		printf("%d\n", m);
+//	}
+//	if (statue == ErrValue)
+//	{
+//		printf("非法转化\n");
+//	}
+//
+//	return 0;
+//}
 
-	char* p = (char*)str;
+//#include <stdlib.h>
+//#include <stdio.h>
+//#include "string.h"
+//int main()
+//{
+//	int i = 0, num;
+//	char arr[20] = { 0 };
+//	char* p;
+//	//get(arr);
+//	p = arr;
+//	int len = strlen(arr);
+//	printf("%d", len);
+//	//for (i = 0; i < len; i++)
+//	//{
+//	//	if ((*p >= '0') && (*p <= '9'))
+//	//	{
+//	//		num = num * 10 + *p - '0';
+//	//	}
+//	//	p++;
+//	//}
+//
+//	
+//	//printf("%d", num);
+//	return 0;
+//}
 
-	long long n = 0;
-	int flag = 1;
-	//字符串长度为0
-	if (*str == '\0')
-	{
-		return 0;
-	}
-	//字符串前面有很多空格
-	while (*p == ' ')
-	{
-		p++;
-	}
-	//判断符号
-	if (*p == '+')
-	{
-		flag = 1;
-		p++;
-	}
-	else if (*p == '-')
-	{
-		flag = -1;
-		p++;
-	}
-	//开始计算
-	while (*p != '\0')
-	{
-		if (isdigit(*p))
-		{
-			n = n * 10 + flag * (*p - '0');
-			if (n > INT_MAX)
-			{
-				n = INT_MAX;
-				break;
-			}
-			else if (n < INT_MIN)
-			{
-				n = INT_MIN;
-				break;
-			}
-		}
-		else
-		{
-			break;
-		}
-		p++;
-	}
+//#include <stdio.h>
+//
+//int main()
+//{
+//	char str[2] = "a";
+//	char* pf = str;
+//	printf("%s", pf);
+//	return 0;
+//}
 
-	if (*p == '\0')
-	{
-		statue = Value;
-	}
+//#include"stdio.h"
+//
+//int main()
+//{
+//	char ch = 'A';
+//	printf("%c", ch*10 + ch);
+//	return 0;
+//}
+//
+//
+////#include <stdio.h>
+////int main()
+////{
+////	char str[7] = "abc123";
+////	char* pf = str;
+////	while (*pf)
+////	{
+////		if ((*pf) >= '0' && (*pf) <= '9')
+////		{
+////			printf("%d\n", (char*)pf);
+////		}
+////		pf++;
+////	}
+////	return 0;
+////}
 
-	return (int)n;
-}/**
- 特殊情况
- 1前面有一大堆空格
- 2传过来空指针
- 3字符串长度为0
- 4整形溢出
- 5含有其它字符
- */
+//#include<stdio.h>
+//#include<string.h>
+//int change(char* s, int* p)
+//{
+//    int num = 0;
+//    while (*s != '\0')
+//    {
+//        if (*s >= '0' && *s <= '9')
+//        {
+//            *p = *s - '0';
+//            p++;
+//            num++;
+//        }
+//        s++;
+//    }
+//    return num;
+//}
+//
+//void main()
+//{
+//    char str1[30];
+//    int str2[30], num, i = 0;
+//    //str1存放原始字符串，str2存放保留数字的字符串
+//    // 请在此添加代码，完成本关任务
+//   /********** Begin *********/
+//    gets_s(str1);
+//    num = change(str1, str2);
+//    printf("只保留数字后的字符串\"");
+//    for (i = 0; i < num; i++)
+//    for (i = 0; i < num; i++)
+//        printf("%d", str2[i]);
+//    printf("\"的长度为%d。\n", num);
+//}
 
-int main()
-{
-	char arr[] = "5684   7";
-	int m = my_atoi(arr);
-	if (statue == Value)
-	{
-		printf("%d\n", m);
-	}
-	if (statue == ErrValue)
-	{
-		printf("非法转化\n");
-	}
+#include <stdio.h>
+#include <stdlib.h>
 
-	return 0;
-}
