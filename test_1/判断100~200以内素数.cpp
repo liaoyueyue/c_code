@@ -1,9 +1,9 @@
 #include"stdio.h"
 //素数只能被1整除和被自己整除
-int main_1()
+int main()
 {
 	int i = 0,count=0;
-	for (i = 100; i <= 200; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		int j = 0;
 		for (j = 2; j < i; j++)
@@ -15,7 +15,7 @@ int main_1()
 		{
 			count++;
 			printf("%-6d", i);//素数
-		}
+		}	
 	}
 	printf("\ncount=%d", count);
 	return 0;
@@ -77,7 +77,7 @@ int main_3()
 }
 //优化
 //因为所有的偶数都可以被2整除，所以偶数都不是素数
-int main()
+int main1()
 {
 	int i = 0, count = 0;
 	for (i = 101; i <= 200; i+=2)
