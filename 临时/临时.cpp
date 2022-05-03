@@ -1985,3 +1985,13 @@
 //	return 0;
 //}
 
+//#include <stdio.h>
+//
+//int main()
+//{
+//    char a, b;
+//    a = getchar();
+//    b = a - 32;
+//    printf("%c", b);
+//    return 0;
+//}
