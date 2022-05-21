@@ -6,16 +6,27 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <windows.h>
 
-#include "game.c"
 
+#define ROW 3
+#define COL 3
 
-void GameInIt();
+//初始化棋盘
+void InItBoard(char board[ROW][COL], int row, int col);
 
-void PlayGame();
+//打印棋盘
+void DisplayBoard(char board[ROW][COL], int row, int col);
 
-void GameResult();
+//玩家移动
+void player_move(char board[ROW][COL], int row, int col);
+
+//电脑移动
+void computer_move(char board[ROW][COL], int row, int col);
+
+char is_win(char board[ROW][COL], int row, int col);
+
 
 
 
