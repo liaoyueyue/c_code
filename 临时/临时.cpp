@@ -1995,3 +1995,81 @@
 //    printf("%c", b);
 //    return 0;
 //}
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int a = printf("Hello world!");
+//    printf("\n");
+//    printf("%d", a);
+//    return 0;
+//}
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    char ch = 0;
+//    scanf("%c", &ch);
+//    for (int i = 1; i <= 5; i++)
+//    {
+//        for (int j = 5 - i; j >= 0; j--)
+//        {
+//            printf(" ");
+//        }
+//        for (int x = 1; x <= i; x++)
+//        {
+//            printf("%c ", ch);
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//void SwapValue(int* x, int* y)
+//{
+//    *x = (*x) ^ (*y);
+//    *y = (*x) ^ (*y);
+//    *x = (*x) ^ (*y);
+//}
+//
+//int main()
+//{
+//    int a = 0;
+//    int b = 0;
+//    scanf("a=%d,b=%d", &a, &b);
+//    SwapValue(&a, &b);
+//    printf("a=%d,b=%d", a, b);
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    float a = 0.0;
+//    scanf("%f", &a);
+//    printf("%d", ((int)a % 10));
+//    return 0;
+//}
+
+
+//#include <stdio.h>
+//
+//int main()
+//{
+//    int a = 1;
+//    int b = 2;
+//    a = 1 ^ a;
+//    b = 1 ^ b;
+//    printf("%d %d", a, b);
+//    return 0;
+//}
+
+
