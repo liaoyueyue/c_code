@@ -2072,4 +2072,27 @@
 //    return 0;
 //}
 
+// #include <stdio.h>
+//
+//int main()
+//{
+//    int a = 0;
+//    int b = 0;
+//    scanf("%o %x", &a, &b);
+//    printf("%#o %#x", a, b);
+//    return 0;
+//}
+
+#include <stdio.h>
+int main()
+{
+    int i;
+    for (i = 10000; i < 100000; i++)
+    {
+        if (i == (i / 10000) * (i % 10000) + (i / 1000) * (i % 1000) + (i / 100) * (i % 100) + (i / 10) * (i % 10))
+            printf("%d ", i);
+    }
+    return 0;
+}
+
 
