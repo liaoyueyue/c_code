@@ -2083,16 +2083,58 @@
 //    return 0;
 //}
 
-#include <stdio.h>
+//#include <stdio.h>
+//int main()
+//{
+//    int i;
+//    for (i = 10000; i < 100000; i++)
+//    {
+//        if (i == (i / 10000) * (i % 10000) + (i / 1000) * (i % 1000) + (i / 100) * (i % 100) + (i / 10) * (i % 10))
+//            printf("%d ", i);
+//    }
+//    return 0;
+//}
+
+#include<stdio.h>
+#include<stdlib.h>
+int compare(const void* e1, const void* e2)
+{
+    return *(int*)e1 - *(int*)e2;
+
+}
 int main()
 {
-    int i;
-    for (i = 10000; i < 100000; i++)
+    int arr[50] = { 0 };
+    int n = 0;
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++)
     {
-        if (i == (i / 10000) * (i % 10000) + (i / 1000) * (i % 1000) + (i / 100) * (i % 100) + (i / 10) * (i % 10))
-            printf("%d ", i);
+
+        scanf("%d", &arr[i]);
+
     }
+
+    int temp = 0;
+    /*for(int j=0;j<n-1;j++)
+    {
+      for(int m=0;m<n-1-j;m++)
+      {
+          if(arr[m]<arr[m+1])
+        {
+            temp=arr[m];
+            arr[m]=arr[m+1];
+            arr[m+1]=temp;
+        }
+      }
+    }*/
+    qsort(arr, n, 4, compare);
+    /*for(int k=0;k<5;k++)
+    {
+       printf("%d ",arr[k]);
+    }*/
+
+    for (int k = n - 1; k >= n - 5; k--)
+        printf("%d ", arr[k]);
+
     return 0;
 }
-
-
