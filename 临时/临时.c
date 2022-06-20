@@ -2094,25 +2094,44 @@
 //    }
 //    return 0;
 //}
+//
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int cmp_int(void* e1, void* e2)
+//{
+//    return *(int*)e1 - *(int*)e2;
+//}
+//
+//int main()
+//{
+//    int arr[10] = { 2, 4, 6, 8, 10, 1, 3, 5, 7, 9 };
+//    qsort(arr,//要比较的数组
+//        10,//要比较的个数
+//        sizeof(arr[0]),//每个元素的大小(字节)
+//        cmp_int);//自定义比较函数
+//    for (int i = 0; i < 10; i++)
+//    {
+//        printf("%d ", arr[i]);
+//    }
+//    return 0;
+//}
 
+//金字塔
 #include <stdio.h>
-#include <stdlib.h>
 
-int cmp_int(void* e1, void* e2)
-{
-    return *(int*)e1 - *(int*)e2;
-}
-
-int main()
-{
-    int arr[10] = { 2, 4, 6, 8, 10, 1, 3, 5, 7, 9 };
-    qsort(arr,//要比较的数组
-        10,//要比较的个数
-        sizeof(arr[0]),//每个元素的大小(字节)
-        cmp_int);//自定义比较函数
-    for (int i = 0; i < 10; i++)
-    {
-        printf("%d ", arr[i]);
+int main() {
+    int n = 0;
+    while (~scanf("%d", &n)) {
+        for (int i = 1; i <= n; i++) {
+            for (int k = n - i; k > 0; k--) {
+                printf(" ");
+            }
+            for (int j = i; j > 0; j--) {
+                printf("* ");
+            }
+            printf("\n");
+        }
     }
     return 0;
 }
