@@ -2117,21 +2117,56 @@
 //    return 0;
 //}
 
-//金字塔
+////金字塔
+//#include <stdio.h>
+//
+//int main() {
+//    int n = 0;
+//    while (~scanf("%d", &n)) {
+//        for (int i = 1; i <= n; i++) {
+//            for (int k = n - i; k > 0; k--) {
+//                printf(" ");
+//            }
+//            for (int j = i; j > 0; j--) {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
+
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n = 0;
-    while (~scanf("%d", &n)) {
-        for (int i = 1; i <= n; i++) {
-            for (int k = n - i; k > 0; k--) {
-                printf(" ");
-            }
-            for (int j = i; j > 0; j--) {
-                printf("* ");
-            }
-            printf("\n");
+    scanf("%d", &n);
+    //上半部分
+    for (int i = n; i >= 0; i--)
+    {
+        for (int j = i; j > 0; j--)
+        {
+            printf(" ");
         }
+        for (int k = 0; k <= n - i; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    //下半部分
+    for (int i = n; i > 0; i--)
+    {
+        for (int j = n - i; j >= 0; j--)
+        {
+            printf(" ");
+        }
+        for (int k = i; k > 0; k--)
+        {
+            printf("* ");
+        }
+        printf("\n");
     }
     return 0;
 }
